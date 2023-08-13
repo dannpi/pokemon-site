@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Pokemon-store</title>
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Pokmon Pop Cart</h1>
+    <h2>Continue Purchase your Fav Pops</h2>
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./store.html">Store</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr>
+<main>
+  <article>
+    <h2>Choose your Pokemon</h2>
+    <p>Please fill in some data before you make an order</p>
+    <form>
+      <p>
+        <label for="pops">Choose your pop</label>
+        <select id="pops">
+          <option value="mew-two">Mew Two</option>
+          <option value="mew">Mew</option>
+          <option value="pikachu">Pikachu</option>
+        </select>
+      </p>
+      <p>
+        <label for="quantity">Quantity</label>
+        <input id="quantity" type="number" min="1" max="20">
+      </p>
+      <p>
+        <label for="pop-color">Pop Color </label>
+        <input id="pop-color" type="color">
+      </p>
+      <fieldset>
+        <legend>Deliver To</legend>
+        <label for="full-name">Full Name</label>
+        <input id="full-name" placeholder="first name & last name" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" required>
+      <p>
+        <label for="address">Your Address</label>
+        <textarea id="address" required></textarea>
+      </p>
+      </fieldset>
+      <button>Buy Now</button>
+    </form>
+
+  </article>
+</main>
+</body>
+</html>
